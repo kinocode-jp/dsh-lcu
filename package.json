@@ -1,0 +1,71 @@
+{
+  "name": "@kinocode/dsh-lcu",
+  "version": "0.2.0",
+  "description": "LCU (Codex computer use) for DeepSeek Harness: macOS app control with an approval dialog, via an MCP adapter.",
+  "type": "module",
+  "license": "MIT",
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.ja.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "mcp",
+    "computer-use",
+    "lcu",
+    "codex",
+    "macos"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node --check lib/adapter.mjs && node --check lib/index.js",
+    "prepublishOnly": "npm test"
+  },
+  "author": "kinocode",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-mcp-client": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-mcp-client": {
+      "optional": true
+    }
+  },
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinocode-jp/dsh-lcu.git"
+  },
+  "homepage": "https://github.com/kinocode-jp/dsh-lcu#readme",
+  "bugs": {
+    "url": "https://github.com/kinocode-jp/dsh-lcu/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,8 @@
+# dsh-lcu bundle patch: mounts LCU (Codex computer use) as the MCP server `lcu`.
+# Install with: dsh plugin --profile <name> add @kinocode/dsh-lcu
+# Tune it from your own profile patch, e.g.:
+#   - id: lcu
+#     config: { approval: all }     # ask (default) | all | deny
+- insert:
+    - id: lcu
+      name: '@kinocode/dsh-lcu'
