@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "电脑操作 LCU (dsh-lcu)",
+    "description": "通过 MCP 适配器使用 LCU(Codex 电脑操作)控制 macOS 应用,每次操作前显示审批对话框。"
+  }
+}

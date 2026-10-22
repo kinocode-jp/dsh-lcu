@@ -18,7 +18,8 @@
     "README.md",
     "README.ja.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "locale/*.json"
   ],
   "keywords": [
     "dsh",
@@ -38,7 +39,8 @@
   "author": "kinocode",
   "exports": {
     ".": "./lib/index.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0"

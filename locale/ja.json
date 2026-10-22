@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PC 操作 LCU (dsh-lcu)",
+    "description": "LCU(Codex のコンピューター操作)で macOS のアプリを操作します。操作の前に承認のダイアログを出します。"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Computer Use LCU (dsh-lcu)",
+    "description": "Control macOS apps with LCU (Codex computer use) through an MCP adapter, with an approval dialog before each action."
+  }
+}
