@@ -1,6 +1,6 @@
 {
   "name": "@kinocode/dsh-lcu",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "LCU (Codex computer use) for DeepSeek Harness: macOS app control with an approval dialog, via an MCP adapter.",
   "type": "module",
   "license": "MIT",
